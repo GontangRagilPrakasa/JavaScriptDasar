@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Universitas Ahmad Dahlan</title>
+</head>
+<body>
+	<table border="1">
+		<thread>
+			<tr>
+				<td>Penjumlahan</td>
+				<td>Pengurangan</td>
+				<td>Perkalian</td>
+				<td>Pembagian</td>	
+			</tr>
+		</thread>
+		<tbody>
+		<tr>
+			<td id="penjumlahan">Penjumlahan</td>
+			<td id="pengurangan">Pengurangan</td>
+			<td id="perkalian">Perkalian</td>
+			<td id="pembagian">Pembagian</td>
+		</tr>
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		var bilanganpertama = 10;
+		var bilangankedua = 5;
+
+
+		var penjumlahan = bilanganpertama + bilangankedua;
+		var pengurangan  = bilanganpertama - bilangankedua;
+		var perkalian = bilanganpertama * bilangankedua;
+		var pembagian = bilanganpertama / bilangankedua;
+
+
+
+		document.getElementById("penjumlahan").innerHTML = penjumlahan;
+		document.getElementById("pengurangan").innerHTML = pengurangan;
+		document.getElementById("perkalian").innerHTML = perkalian;
+		document.getElementById("pembagian").innerHTML = pembagian;
+	</script>
+</body>
+</html>
+

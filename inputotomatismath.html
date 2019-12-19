@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Universitas Ahmad Dahlan</title>
+</head>
+<body>
+	<h3>Membuat Aritmatematika Javascript</h3>
+	<input type="text" id="angka1" onkeyup="javascript();" /> +
+	<input type="text" id="angka2" onkeyup="javascript();" /> -
+	<input type="text" id="angka3" onkeyup="javascript();" /> <br><br>
+	<h4>Hasilnya adalah</h4><input type="text" id="hasil">
+	<script type="text/javascript">
+		function javascript(){
+			var angkapertama = document.getElementById('angka1').value;
+			var angkakedua = document.getElementById('angka2').value;
+			var angkaketiga = document.getElementById('angka3').value;
+			var hasil = parseFloat(angkapertama) + parseFloat(angkakedua) - parseFloat(angkaketiga);
+			if(!isNaN(hasil)){
+				document.getElementById('hasil').value = hasil;
+			}
+		}
+	</script>
+</body>
+</html>
+
